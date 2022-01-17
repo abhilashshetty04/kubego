@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: kubego
+  name: kubego
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubego
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: kubego
+    spec:
+      containers:
+      - image: abhilashshetty04/kubego:0.1.2
+        name: kubego-0-1-2-z5jdx
+        resources: {}
+status: {}
